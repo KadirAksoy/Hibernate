@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/filmawards</property>
+        <property name="connection.username">admin</property>
+        <property name="connection.password">1234</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>  <!--SQL sorgularını görmemizi sağlar-->
+
+        <property name="connection.autocommit">false</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property> <!--Her bir verinin sıralı olarak bitirilmesini sağlar-->
+
+
+    </session-factory>
+</hibernate-configuration>
