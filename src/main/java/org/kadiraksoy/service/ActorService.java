@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 
+@Service
 public class ActorService {
 
     private final Logger LOG = LoggerFactory.getLogger(getClass());
